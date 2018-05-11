@@ -1,0 +1,29 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "create singlepage application without any frameworks",
+  "main": "weath.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
+  },
+  "author": "nik",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "prettier": "^1.11.1",
+    "webpack": "^4.5.0"
+  },
+
+  "eslintConfig": {
+    "extends": ["airbnb-base", "prettier"],
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+    }
+  }
+}
